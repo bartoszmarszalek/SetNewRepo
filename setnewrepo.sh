@@ -6,14 +6,15 @@ setnewrepo () {
 local username=YOUR_GITHUB_USERNAME
 local gittoken=YOUR_GITHUB_TOKEN
 
-#making the repo private (set to false if you want to make it public by default)
-local privacy=true
+#navigating to folder of choice
+cd ~/myprojects
 
-#navigating to a folder where you store your projects
-cd ~/my_projects/
+#making the repo public (set to false if you want to make it public by default)
+local publicity=false
 
 #creating the repo
-curl -u "$username:$gittoken" https://api.github.com/user/repos -d "{\"name\":\"$1\", \"private\":\"$privacy\"}"
+curl -u "$username:$gittoken" https://api.github.com/user/repos -d "{\"name\":\"$1\",\"public\":\"$publicity\"}"
+
 git clone https://github.com/$username/$1.git
 
 #navigating inside the repo
@@ -35,6 +36,6 @@ git commit -m "first commit and uploading the README.md file"
 git push
 
 #if you want you can open it in your favorite text editor, just uncomment line below
-#subl README.md
+subl README.md
 
 }
