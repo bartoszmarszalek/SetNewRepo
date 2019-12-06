@@ -7,9 +7,9 @@ local username=YOUR_GITHUB_USERNAME
 local gittoken=YOUR_GITHUB_TOKEN
 
 #navigating to folder of choice
-cd ~/myprojects
+cd ~/myprojects/
 
-#making the repo public (set to false if you want to make it public by default)
+#making the repo private (set to true if you want to make it public by default)
 local publicity=false
 
 #creating the repo
