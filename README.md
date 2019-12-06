@@ -1,6 +1,6 @@
 
 # SetNewRepo
-Setting a new repository in github with just one command
+Setting a new repository in github with just one command 
 
 ## How to use it:
 once it's set up just open a terminal and:
