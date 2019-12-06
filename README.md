@@ -9,7 +9,11 @@ once it's set up just open a terminal and:
 setnewrepo NewRepoName
 ```
 
-You are going to be rediricted to the folder of the repo.
+You are going to be rediricted to the folder of the repository. You can specify:
+- the path that you store your projects in, 
+- if the repository will be created private or public, 
+- the template of the README.md file, 
+- and whatever else you want when you edit the **setnewrepo.sh** file
 
 ## How to set it up?
 1. instal git and curl:
