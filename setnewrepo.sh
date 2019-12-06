@@ -36,6 +36,6 @@ git commit -m "first commit and uploading the README.md file"
 git push
 
 #if you want you can open it in your favorite text editor, just uncomment line below
-subl README.md
+#subl README.md
 
 }
