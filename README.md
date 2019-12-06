@@ -24,12 +24,10 @@ sudo apt install curl
 ```
 
 2. Setup git - it is going to make your life easier so you don't need to input it every time
-
 ```
 git config --global user.name "YOUR_GITHUB_USERNAME"
 git config --global user.email youremailadress@somewhere.com
 ```
-
 It is also possible to store your password this way, but I would not recommend it in every situation.
 
 3. Setup a bash script with your custom function (the **setnewrepo.sh** file contains the function you'd like to use in it)
